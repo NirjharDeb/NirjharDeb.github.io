@@ -1,4 +1,4 @@
-var helloText = ["Hello!", "¡Hola!", "Hallo!", "Olá!", "Ciao!", "नमस्ते!", "!سلام", "Halló!", "Hej!"];
+var helloText = ["Hello!", "¡Hola!", "Hallo!", "Olá!", "Ciao!", "Namaste!", "!سلام", "Halló!", "Hej!"];
 var helloCounter = 0;
 var helloRepeatMethod = setInterval(changeHello,2000);
 

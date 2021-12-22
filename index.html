@@ -8,16 +8,21 @@
     <title>Nirjhar Deb's Portfolio</title>
 
     <!-- Setting up the favicon (image in the tab) -->
-    <link rel=icon type="image/x-con" href="Opie_NirjharDeb.jpg">
+    <link rel=icon type="image/x-con" href="images/Opie_NirjharDeb.jpg">
 
     <!-- Linking the CSS stylesheet and JS script to this document -->
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="scripts/script1.js"></script>
 </head>
 <body>
+    <!-- Top navigation bar -->
+    <div class="navbar">
+        <a class="homePage" href="index.html">Home</a>
+    </div>
+
     <!-- Name Banner -->
     <div>
-        <h1 id="hello">Hello</h1>
+        <h1 id="hello" class="hello">Hello!</h1>
         <h1>I am Nirjhar Deb</h1>
         <h2>Computer Science Student at Georgia Tech</h2>
     </div>
@@ -25,7 +30,7 @@
     <!-- About me and tech goals -->
     <div>
         <h2>Who is Nirjhar?</h2>
-        <p>
+        <p class="aboutme">
             I'm a student majoring in Computer Science at Georgia Tech.
             As an Indian-American who has lived outside the U.S. for over a decade
             and traveled across the world, I have been fortunate to interact with
@@ -43,15 +48,14 @@
 
     <!-- Access resume -->
     <div>
-        <h2>If you are a recruiter, click here:</h2>
-        <button type="submit" onclick="window.open('Resume_Nirjhar_Deb.pdf')">Open Resume</button>
+        <button type="submit" onclick="window.open('documents/Resume_Nirjhar_Deb.pdf')">Open Resume</button>
     </div>
 
     <!-- Contact Links -->
     <div>
         <br>
         <a href="https://www.linkedin.com/in/nirjhar-deb" target="_blank" rel="noopener noreferrer">
-            <img src="LinkedIn_logo.png" alt="LinkedIn" width="50px" height="50px">
+            <img src="images/LinkedIn_logo.png" alt="LinkedIn" width="50px" height="50px">
         </a>
     </div>
 </body>
