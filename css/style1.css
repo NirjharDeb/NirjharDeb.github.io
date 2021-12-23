@@ -1,6 +1,7 @@
 /* Customize body's background color */
 body {
     background-color:powderblue;
+    margin: 0;
 }
 
 /* Add background-color and scroll bar disabled for the navigation bar */
@@ -31,6 +32,8 @@ body {
     color: white;
 }
 
+/* Some customizations for the tech goals list to allow for custom bullet points */
+
 .goals {
     margin: 0;
     padding: 0;
@@ -60,4 +63,8 @@ body {
 /* Small customizations for the about me text */
 .aboutme {
     text-align: justify;
+}
+
+.contact_boxes {
+    text-decoration: none;
 }
