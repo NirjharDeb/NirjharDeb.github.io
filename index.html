@@ -15,6 +15,31 @@
     <script src="scripts/script1.js"></script>
 </head>
 <body>
+    <!-- Setting up Firebase -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCahLUq03Hk9iCkoRSWKuEHAFoWbSG5yc4",
+          authDomain: "personal-portfolio-9767b.firebaseapp.com",
+          projectId: "personal-portfolio-9767b",
+          storageBucket: "personal-portfolio-9767b.appspot.com",
+          messagingSenderId: "752079549972",
+          appId: "1:752079549972:web:0f094afc1cc611aad51901",
+          measurementId: "G-941GFWG7LX"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    
     <!-- Top navigation bar -->
     <div class="navbar">
         <a class="homePage" href="index.html">Home</a>
@@ -55,13 +80,34 @@
     <div>
         <h2>Contact Me</h2>
         <div>
+            <!-- LinkedIn button -->
             <a href="https://www.linkedin.com/in/nirjhar-deb/" target="_blank" rel="noopener noreferrer" class="contact_boxes">
                 <img src="images/LinkedIn_logo.png" alt="LinkedIn" width="50px" height="50px">
             </a>
+
+            <!-- Gmail button -->
             <a href="mailto:nirjhardeb03@gmail.com" target="_blank" rel="noopener noreferrer" class="contact_boxes">
                 <img src="images/Gmail_logo.png" alt="Gmail" width="50px" height="50px">
             </a>
+
+            <!-- Outlook button -->
+            <a href="mailto:ndeb6@gatech.edu" target="_blank" rel="noopener noreferrer" class="contact_boxes">
+                <img src="images/Outlook_logo.png" alt="Gmail" width="50px" height="50px">
+            </a>
         </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div id="contact_form">
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email address: </label>
+            <input type="text" id="email" name="email"><br>
+            <label for="message">Message: </label>
+            <input type="text" id="message" name="message"><br>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 </body>
 </html>
