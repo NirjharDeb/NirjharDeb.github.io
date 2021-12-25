@@ -20,6 +20,7 @@ const db = getDatabase(app);
 var helloText = ["Hello!", "¡Hola!", "Hallo!", "Olá!", "Ciao!", "Namaste!", "!سلام", "Halló!", "Hej!"];
 var helloCounter = 0;
 var helloRepeatMethod = setInterval(changeHello,2000);
+var contactFormatCheck = false;
 
 //Alternate between different languages' versions of the word "hello"
 function changeHello() {
@@ -50,12 +51,56 @@ function submitForm(e) {
     saveContactInfo(name,email,phone,message);
 }
 
+//Check information for correct format
+function checkContactFormat(name, email, phone, message) {
+    //Testing if email is in correct format (ex: johndoe@email.com)
+    var emailTest = email.match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+
+    //Testing if phone number is in correct format (ex: 470-832-9200 or 4708329200 or 470 832 9200)
+    var phoneTest = phone.match(
+        /^\(?([0-9]{3})\)?[- ]?([0-9]{3})[- ]?([0-9]{4})$/
+    );
+
+    //Various checks on the form for format and completion
+    if(name === "" || email === "" || phone === "" || message === "") {
+        document.getElementById("formstatus").innerHTML = "Form Status: One or more fields of the form are empty. Please complete all of the fields.";
+    } else if(emailTest == null && phoneTest == null) {
+        document.getElementById("formstatus").innerHTML = "Form Status: Email address and phone number inputted incorrectly. Please enter your email in the format of johndoe@email.com, and enter your phone number in the format of ### ### ####, ###-###-####, or ##########.";
+    } else if(emailTest == null) {
+        document.getElementById("formstatus").innerHTML = "Form Status: Email address inputted incorrectly. Please enter your email in the format of johndoe@email.com.";
+    } else if(phoneTest == null) {
+        document.getElementById("formstatus").innerHTML = "Form Status: Phone number inputted incorrectly. Please enter your phone number in the format of ### ### ####, ###-###-####, or ##########.";
+    } else {
+        contactFormatCheck = true;
+    }
+}
+
 //Save details from the form to Firebase database
 function saveContactInfo(name, email, phone, message) {
-    push(ref(db, 'contacters/' + name + "/"), {
-        name: name,
-        email: email,
-        phone: phone,
-        message: message
-    });
+    checkContactFormat(name, email, phone, message);
+    if(contactFormatCheck) {
+        push(ref(db, 'messengers/' + name + "/"), {
+            //Attempt to submit user data to Firebase
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+        })
+        .then(() => {
+            //Submitted successfully
+            document.getElementById("formstatus").innerHTML = "Form Status: Successful submission!";
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("message").value = "";
+        })
+        .catch((error) => {
+            //Failed to submit
+            document.getElementById("formstatus").innerHTML = "Form Status: Failed to submit. Please try again.";
+        });
+    } else {
+        console.log("Contact form has at least one invalid input and thus could not be submitted.");
+    }
 }
