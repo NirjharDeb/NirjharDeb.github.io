@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+import { getDatabase, ref, set, push } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -14,9 +14,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
-const contactInfo = ref(db, )
-
-
 
 var helloText = ["Hello!", "¡Hola!", "Hallo!", "Olá!", "Ciao!", "Namaste!", "!سلام", "Halló!", "Hej!"];
 var helloCounter = 0;
@@ -52,10 +49,10 @@ function submitForm(e) {
 
 //Save infos to Firebase
 function saveContactInfo(name, email, phone, message) {
-    set(ref(db, 'contacters/'), {
+    push(ref(db, 'contacters/' + name + "/"), {
         name: name,
         email: email,
         phone: phone,
         message: message
-    })
+    });
 }
