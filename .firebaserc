@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "nirjhar-deb-personal-portfolio",
+    "staging": "nirjhar-deb-personal-portfolio"
+  },
+  "targets": {}
+}

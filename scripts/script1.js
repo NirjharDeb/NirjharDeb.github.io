@@ -1,3 +1,23 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCe9qqoRNEVwzGPXfmKOzNl7wWqgetu1JI",
+  authDomain: "nirjhar-deb-personal-portfolio.firebaseapp.com",
+  projectId: "nirjhar-deb-personal-portfolio",
+  storageBucket: "nirjhar-deb-personal-portfolio.appspot.com",
+  messagingSenderId: "1076827520750",
+  appId: "1:1076827520750:web:6f44740be0d37f20dc7dff"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+const contactInfo = ref(db, )
+
+
+
 var helloText = ["Hello!", "¡Hola!", "Hallo!", "Olá!", "Ciao!", "Namaste!", "!سلام", "Halló!", "Hej!"];
 var helloCounter = 0;
 var helloRepeatMethod = setInterval(changeHello,2000);
@@ -27,10 +47,15 @@ function submitForm(e) {
     let email = document.getElementById("email").value;
     let phone = document.getElementById("phone").value;
     let message = document.getElementById("message").value;
+    saveContactInfo(name,email,phone,message);
+}
 
-    console.log(name);
-    console.log(email);
-    console.log(phone);
-    console.log(message);
-
+//Save infos to Firebase
+function saveContactInfo(name, email, phone, message) {
+    set(ref(db, 'contacters/'), {
+        name: name,
+        email: email,
+        phone: phone,
+        message: message
+    })
 }
