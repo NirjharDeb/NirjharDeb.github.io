@@ -16,6 +16,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
+//Establish different variables used to change "Hello!" to other languages
 var helloText = ["Hello!", "¡Hola!", "Hallo!", "Olá!", "Ciao!", "Namaste!", "!سلام", "Halló!", "Hej!"];
 var helloCounter = 0;
 var helloRepeatMethod = setInterval(changeHello,2000);
