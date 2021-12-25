@@ -1,8 +1,8 @@
-// Import the functions you need from the SDKs you need
+//Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 import { getDatabase, ref, set, push } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
 
-// Your web app's Firebase configuration
+//Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCe9qqoRNEVwzGPXfmKOzNl7wWqgetu1JI",
   authDomain: "nirjhar-deb-personal-portfolio.firebaseapp.com",
@@ -12,6 +12,7 @@ const firebaseConfig = {
   appId: "1:1076827520750:web:6f44740be0d37f20dc7dff"
 };
 
+//Initialize Firebase app and get the database
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
@@ -33,9 +34,10 @@ window.onload = function () {
     changeHello();
 };
 
-//Listen for a submit in the contact form
+//Listen for a click (i.e., when the user clicks the submit button) in the contact form
 document.getElementById("submitButton").addEventListener("click", submitForm);
 
+//Once the user hits the submit button, grab values from the form
 function submitForm(e) {
     e.preventDefault();
     
@@ -47,7 +49,7 @@ function submitForm(e) {
     saveContactInfo(name,email,phone,message);
 }
 
-//Save infos to Firebase
+//Save details from the form to Firebase database
 function saveContactInfo(name, email, phone, message) {
     push(ref(db, 'contacters/' + name + "/"), {
         name: name,
