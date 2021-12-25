@@ -17,9 +17,20 @@ window.onload = function () {
 };
 
 //Listen for a submit in the contact form
-document.querySelector("contact-form").addEventListener("submit", submitForm);
+document.getElementById("submitButton").addEventListener("click", submitForm);
 
 function submitForm(e) {
     e.preventDefault();
-    console.log(123);
+    
+    //Get input values
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
+
+    console.log(name);
+    console.log(email);
+    console.log(phone);
+    console.log(message);
+
 }
