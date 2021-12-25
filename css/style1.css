@@ -65,13 +65,44 @@ body {
     text-align: justify;
 }
 
+/* Customizes the contact pictures (ex: LinkedIn, GitHub, Outlook, Email) */
 .contact_boxes {
     text-decoration: none;
 }
 
+/* Customizes the "designed with..." statement */
 .production-statement {
     text-decoration: none;
     text-align: center;
     font-size:x-large;
     font-family: fantasy;
+}
+
+/* Customizes both left and right sides of form (but not the form title and submit button) */
+.form-inputs {
+    display: flex;
+    justify-content: center;
+}
+
+/* Customizing left side of form */
+.left-form {
+    padding: 10px;
+    float: left;
+}
+
+/* Customizing right side of form */
+.right-form {
+    padding: 10px;
+    float: right;
+}
+
+/* Basic customizations for entire contact form */
+.contact-form {
+    text-align: center;
+    border-style: groove;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 10px;
+    max-width: fit-content;
+    margin: auto;
 }
