@@ -63,13 +63,18 @@ h2 {
     grid-template-columns: 0 1fr;
     gap: 1.75em;
     align-items: start;
-    font-size: 1.5rem;
-    line-height: 1.25;
+    font-size: 20px;
+    line-height: 1.55;
     color: #CCCCCC;
+    justify-self: left;
+    font-weight: bold;
 }
 
 .goals li::before {
     content: attr(data-icon);
+    margin-left: 5px;
+    justify-content: center;
+    font-weight: lighter;
 }
 
 /* Customizes the "designed with..." statement */
