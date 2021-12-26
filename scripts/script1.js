@@ -25,6 +25,7 @@ var contactFormatCheck = false;
 //Alternate between different languages' versions of the word "hello"
 function changeHello() {
     document.getElementById("hello").innerHTML = helloText[helloCounter];
+    document.getElementById("banner-text").innerHTML = helloText[helloCounter];
     helloCounter++;
     if(helloCounter >= helloText.length) {
         helloCounter = 0;

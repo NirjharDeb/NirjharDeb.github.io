@@ -18,6 +18,7 @@ h2 {
     overflow: hidden;
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 /* General customizations for links in the navbar */
@@ -71,11 +72,6 @@ h2 {
 /* Small customizations for the about me text */
 .aboutme {
     text-align: justify;
-}
-
-/* Customizes the contact pictures (ex: LinkedIn, GitHub, Outlook, Email) */
-.contact_boxes {
-    text-decoration: none;
 }
 
 /* Customizes the "designed with..." statement */
@@ -149,15 +145,65 @@ h2 {
     color: orange;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 7px 16px;
+    z-index: 10;
 }
 
 .banner-image {
     width: 100%;
     height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: -1;
 }
 
 /* Blurry red shadow effect for the "hello" text */
 .hello {
     text-shadow: 2px 2px 5px red;
     display: inline;
+}
+
+.banner-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: fantasy;
+    font-size: 90px;
+    text-shadow: 2px 2px 5px red;
+    text-align: center;
+}
+
+.banner-subtext {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: fantasy;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 5px red;
+}
+
+.contact-links-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-label {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+/* Customizes the contact pictures (ex: LinkedIn, GitHub, Outlook, Email) */
+.contact_boxes {
+    text-decoration: none;
+    margin: 10px;
 }
