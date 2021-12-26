@@ -72,11 +72,6 @@ h2 {
     content: attr(data-icon);
 }
 
-/* Small customizations for the about me text */
-.aboutme {
-    text-align: justify;
-}
-
 /* Customizes the "designed with..." statement */
 .production-statement {
     text-decoration: none;
@@ -181,10 +176,11 @@ h2 {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: fantasy;
+    font-family: 'Bungee Inline', cursive;
     font-size: 90px;
     text-shadow: 2px 2px 5px red;
     text-align: center;
+    font-weight: bold;
 }
 
 /* Customizations for the welcome text in the banner */
@@ -193,11 +189,12 @@ h2 {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: fantasy;
+    font-family: 'IM Fell English SC', serif;
     font-size: 50px;
     text-align: center;
     color: black;
     text-shadow: 2px 2px 5px red;
+    font-weight: bold;
 }
 
 /* Customizations for when viewing in half-screen on desktop */
@@ -210,10 +207,11 @@ h2 {
         top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: fantasy;
+        font-family: 'Bungee Inline', cursive;
         font-size: 90px;
         text-shadow: 2px 2px 5px red;
         text-align: center;
+        font-weight: bold;
     }
 
     /* Customizations for the welcome text in the banner */
@@ -222,11 +220,12 @@ h2 {
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: fantasy;
+        font-family: 'IM Fell English SC', serif;
         font-size: 50px;
         text-align: center;
         color: black;
         text-shadow: 2px 2px 5px red;
+        font-weight: bold;
     }
 }
 
@@ -238,10 +237,11 @@ h2 {
         top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: fantasy;
+        font-family: 'Bungee Inline', cursive;
         font-size: 90px;
         text-shadow: 2px 2px 5px red;
         text-align: center;
+        font-weight: bold;
     }
 
     /* Customizations for the welcome text in the banner */
@@ -250,11 +250,12 @@ h2 {
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: fantasy;
+        font-family: 'IM Fell English SC', serif;
         font-size: 50px;
         text-align: center;
         color: black;
         text-shadow: 2px 2px 5px red;
+        font-weight: bold;
     }
 
     /* Customizations for futuristic banner image */
@@ -333,4 +334,39 @@ h2 {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Customizations for "Who is Nirjhar Deb?" Header */
+.introducing-nirjhar {
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+/* Customizations for entire about me section */
+.about-me {
+    display: flex;
+    justify-content: center;
+}
+
+/* Small customizations for the about me text */
+.about-me-description {
+    text-align: justify;
+    font-size: x-large;
+    margin: 20px;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Customizations for TEDx Image */
+.tedx-image {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 20px;
+    border-left: 5px;
+    border-color: #CCCCCC;
+    border-style: inset;
 }
