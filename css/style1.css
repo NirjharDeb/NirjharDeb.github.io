@@ -106,3 +106,24 @@ body {
     max-width: fit-content;
     margin: auto;
 }
+
+.bottom-form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.resetButton {
+    margin: auto;
+    float: left;
+}
+
+.submitButton {
+    margin: auto;
+    float: right;
+}
+
+.message {
+    overflow-y: scroll;
+    resize: none;
+}

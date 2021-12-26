@@ -84,29 +84,31 @@
                 <div class="left-form">
                     <!-- Text field for name -->
                     <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name"><br><br>
+                    <input type="text" id="name" name="name" placeholder="John Doe"><br><br>
     
                     <!-- Email field for email address -->
                     <label for="email">Email address:</label><br>
-                    <input type="email" id="email" name="email"><br><br>
+                    <input type="email" id="email" name="email" placeholder="johndoe@email.com"><br><br>
     
                     <!-- Text field for phone number -->
                     <label for="phoneNumber">Phone number:</label><br>
-                    <input type="text" id="phone" name="phone"><br>
+                    <input type="text" id="phone" name="phone" placeholder="### ### ####"><br>
                 </div>
     
                 <div class="right-form">
                     <!-- Text area for message -->
                     <label for="message">Message:</label><br>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" class="message" cols="20" rows="9" placeholder="Write your message here"></textarea>
                 </div>
             </div>
             <div class="bottom-form">
                 <!-- Submit button -->
-                <button id="submitButton" type="submit">Submit</button>
+                <button id="submitButton" class="submitButton" type="submit">Submit</button>
+
+                <!--  Reset form button -->
+                <button id="resetButton" class="resetButton" type="button">Reset</button>
             </div>
         </form>
-        <h2 id="formstatus">Form Status: Incomplete</h2>
     </div>
 
     <!-- A Sweet Production Statement -->

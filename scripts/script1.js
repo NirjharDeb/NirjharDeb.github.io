@@ -65,13 +65,13 @@ function checkContactFormat(name, email, phone, message) {
 
     //Various checks on the form for format and completion
     if(name === "" || email === "" || phone === "" || message === "") {
-        document.getElementById("formstatus").innerHTML = "Form Status: One or more fields of the form are empty. Please complete all of the fields.";
+        window.alert("One or more fields of the form are empty. Please complete all of the fields.");
     } else if(emailTest == null && phoneTest == null) {
-        document.getElementById("formstatus").innerHTML = "Form Status: Email address and phone number inputted incorrectly. Please enter your email in the format of johndoe@email.com, and enter your phone number in the format of ### ### ####, ###-###-####, or ##########.";
+        window.alert("Email address and phone number inputted incorrectly. Please enter your email in the format of johndoe@email.com, and enter your phone number in the format of ### ### ####, ###-###-####, or ##########.");
     } else if(emailTest == null) {
-        document.getElementById("formstatus").innerHTML = "Form Status: Email address inputted incorrectly. Please enter your email in the format of johndoe@email.com.";
+        window.alert("Email address inputted incorrectly. Please enter your email in the format of johndoe@email.com.");
     } else if(phoneTest == null) {
-        document.getElementById("formstatus").innerHTML = "Form Status: Phone number inputted incorrectly. Please enter your phone number in the format of ### ### ####, ###-###-####, or ##########.";
+        window.alert("Phone number inputted incorrectly. Please enter your phone number in the format of ### ### ####, ###-###-####, or ##########.");
     } else {
         contactFormatCheck = true;
     }
@@ -90,17 +90,28 @@ function saveContactInfo(name, email, phone, message) {
         })
         .then(() => {
             //Submitted successfully
-            document.getElementById("formstatus").innerHTML = "Form Status: Successful submission!";
+            window.alert("Form submitted successfully!");
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
             document.getElementById("phone").value = "";
             document.getElementById("message").value = "";
+            contactFormatCheck = false;
         })
         .catch((error) => {
             //Failed to submit
-            document.getElementById("formstatus").innerHTML = "Form Status: Failed to submit. Please try again.";
+            window.alert("Failed to submit form. Please try again.");
         });
-    } else {
-        console.log("Contact form has at least one invalid input and thus could not be submitted.");
+    }
+}
+
+document.getElementById("resetButton").addEventListener("click", resetForm);
+
+function resetForm() {
+    if(window.confirm("Are you sure that you would like to reset the form?")) {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("message").value = "";
+        contactFormatCheck = false;
     }
 }
