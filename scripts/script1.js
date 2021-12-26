@@ -105,8 +105,10 @@ function saveContactInfo(name, email, phone, message) {
     }
 }
 
+//Listen for a click of the reset button to call the resetForm method
 document.getElementById("resetButton").addEventListener("click", resetForm);
 
+//Clears all the fields of the contact form
 function resetForm() {
     if(window.confirm("Are you sure that you would like to reset the form?")) {
         document.getElementById("name").value = "";

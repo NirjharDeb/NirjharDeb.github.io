@@ -4,10 +4,12 @@ body {
     margin: 0;
 }
 
+/* Generic customization for paragraph text */
 p {
     color: #CCCCCC;
 }
 
+/* Generic customization for header 2 text */
 h2 {
     color: #CCCCCC;
 }
@@ -115,31 +117,37 @@ h2 {
     padding: 10px;
 }
 
+/* Customizing positioning of the bottom section of the contact form */
 .bottom-form {
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
+/* Customizations for reset button */
 .resetButton {
     margin: auto;
     float: left;
 }
 
+/* Customizations for submit button */
 .submitButton {
     margin: auto;
     float: right;
 }
 
+/* Customizations for message text area (to make it scrollable and not size-adjustable) */
 .message {
     overflow-y: scroll;
     resize: none;
 }
 
+/* Customizations for "I am Nirjhar" in the nav bar */
 .introducing-name {
     display: inline;
 }
 
+/* Customizations for "Hello! I am Nirjhar" in the nav bar */
 .introducing-me {
     font-weight: bold;
     text-align: center;
@@ -150,6 +158,7 @@ h2 {
     justify-content: center;
 }
 
+/* Customizations for futuristic banner image */
 .banner-image {
     width: 100%;
     height: 100vh;
@@ -165,6 +174,7 @@ h2 {
     display: inline;
 }
 
+/* Customizations for big Hello text */
 .banner-text {
     position: absolute;
     top: 35%;
@@ -176,6 +186,7 @@ h2 {
     text-align: center;
 }
 
+/* Customizations for the welcome text in the banner */
 .banner-subtext {
     position: absolute;
     top: 55%;
@@ -188,6 +199,7 @@ h2 {
     text-shadow: 2px 2px 5px red;
 }
 
+/* Customizations for the credit statement for the homepage artwork */
 .banner-credit {
     position: absolute;
     bottom: 8px;
@@ -200,21 +212,25 @@ h2 {
     text-align: right;
 }
 
+/* Customizing the link in the credit statement */
 .banner-credit a {
     color: blue;
 }
 
+/* Customizations for all of the contact links including their title */
 .contact-links-total {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Customizations for the title of the contact links */
 .contact-label {
     display: flex;
     justify-content: center;
 }
 
+/* Customizations for the container holding the contact boxes */
 .contact-links {
     display: flex;
     justify-content: center;
@@ -226,6 +242,7 @@ h2 {
     margin: 10px;
 }
 
+/* When hovering over contact boxes, they shake */
 .contact-boxes img:hover {
     /* Start the shake animation and make the animation last for 1.25 seconds */
     animation: shake 1.25s;
