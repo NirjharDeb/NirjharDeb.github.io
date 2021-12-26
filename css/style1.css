@@ -166,6 +166,7 @@ h2 {
     text-align: center;
     color: white;
     z-index: -1;
+    object-fit: cover;
 }
 
 /* Blurry red shadow effect for the "hello" text */
@@ -197,6 +198,74 @@ h2 {
     text-align: center;
     color: black;
     text-shadow: 2px 2px 5px red;
+}
+
+/* Customizations for when viewing in half-screen on desktop */
+@media (max-width: 800px) {
+    
+    
+    /* Customizations for big Hello text */
+    .banner-text {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: fantasy;
+        font-size: 90px;
+        text-shadow: 2px 2px 5px red;
+        text-align: center;
+    }
+
+    /* Customizations for the welcome text in the banner */
+    .banner-subtext {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: fantasy;
+        font-size: 50px;
+        text-align: center;
+        color: black;
+        text-shadow: 2px 2px 5px red;
+    }
+}
+
+/* Customizations for when viewing in mobile */
+@media (max-height: 500px) {
+    /* Customizations for big Hello text */
+    .banner-text {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: fantasy;
+        font-size: 90px;
+        text-shadow: 2px 2px 5px red;
+        text-align: center;
+    }
+
+    /* Customizations for the welcome text in the banner */
+    .banner-subtext {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: fantasy;
+        font-size: 50px;
+        text-align: center;
+        color: black;
+        text-shadow: 2px 2px 5px red;
+    }
+
+    /* Customizations for futuristic banner image */
+    .banner-image {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        color: white;
+        z-index: -1;
+        object-fit: cover;
+    }
 }
 
 /* Customizations for the credit statement for the homepage artwork */
