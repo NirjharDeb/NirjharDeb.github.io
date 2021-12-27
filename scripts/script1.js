@@ -90,8 +90,18 @@ function saveContactInfo(name, email, phone, message) {
             message: message
         })
         .then(() => {
-            //Submitted successfully
-            window.alert("Form submitted successfully!");
+            //Submitted successfully and sends an email to me so that I can reply on time
+            Email.send({
+                SecureToken : "5735a6f0-ac77-4cfe-96e6-21fe4661feb3",
+                To : 'nirjhardeb03@gmail.com',
+                From : "nirjhardeb03@gmail.com",
+                Subject : "Personal Portfolio: Message from " + document.getElementById("name").value + "! | Email: " + document.getElementById("email").value + " | Phone: " + document.getElementById("phone").value,
+                Body : "Message: " + document.getElementById("message").value
+            }).then(
+                window.alert("Form submitted successfully! I have received your message and will contact you via email within a week.")
+            );
+
+            //Resets the form
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
             document.getElementById("phone").value = "";
@@ -101,6 +111,7 @@ function saveContactInfo(name, email, phone, message) {
         .catch((error) => {
             //Failed to submit
             window.alert("Failed to submit form. Please try again.");
+            console.log(error);
         });
     }
 }
