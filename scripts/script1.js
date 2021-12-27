@@ -96,9 +96,9 @@ function saveContactInfo(name, email, phone, message) {
                 To : 'nirjhardeb03@gmail.com',
                 From : "nirjhardeb03@gmail.com",
                 Subject : "Personal Portfolio: Message from " + document.getElementById("name").value + "! | Email: " + document.getElementById("email").value + " | Phone: " + document.getElementById("phone").value,
-                Body : "Message: " + document.getElementById("message").value
+                Body : document.getElementById("message").value
             }).then(
-                window.alert("Form submitted successfully! I have received your message and will contact you via email within a week.")
+                window.alert("Form submitted successfully! I have received your message and will contact you via email within a week. If I do not contact you, please feel free to call me at 470-832-9200!")
             );
 
             //Resets the form
@@ -109,7 +109,6 @@ function saveContactInfo(name, email, phone, message) {
             contactFormatCheck = false;
         })
         .catch((error) => {
-            //Failed to submit
             window.alert("Failed to submit form. Please try again.");
             console.log(error);
         });
