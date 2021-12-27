@@ -4,12 +4,12 @@ import { getDatabase, ref, set, push } from "https://www.gstatic.com/firebasejs/
 
 //Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCe9qqoRNEVwzGPXfmKOzNl7wWqgetu1JI",
-  authDomain: "nirjhar-deb-personal-portfolio.firebaseapp.com",
-  projectId: "nirjhar-deb-personal-portfolio",
-  storageBucket: "nirjhar-deb-personal-portfolio.appspot.com",
-  messagingSenderId: "1076827520750",
-  appId: "1:1076827520750:web:6f44740be0d37f20dc7dff"
+    apiKey: "AIzaSyCe9qqoRNEVwzGPXfmKOzNl7wWqgetu1JI",
+    authDomain: "nirjhar-deb-personal-portfolio.firebaseapp.com",
+    projectId: "nirjhar-deb-personal-portfolio",
+    storageBucket: "nirjhar-deb-personal-portfolio.appspot.com",
+    messagingSenderId: "1076827520750",
+    appId: "1:1076827520750:web:6f44740be0d37f20dc7dff"
 };
 
 //Initialize Firebase app and get the database
