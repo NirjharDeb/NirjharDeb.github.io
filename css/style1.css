@@ -353,15 +353,23 @@ h2 {
 .about-me {
     display: flex;
     justify-content: center;
+    background-color: #b6ac9d;
+    border-width: 5px;
+    border-style: dotted;
+    border-radius: 5px;
+    margin: 20px;
 }
 
 /* Small customizations for the about me text */
 .about-me-description {
     text-align: justify;
-    font-size: x-large;
-    margin: 20px;
-    font-weight: lighter;
+    font-size: large;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-weight: bold;
 }
 
 /* Customizations for TEDx Image */
@@ -371,6 +379,9 @@ h2 {
     object-fit: cover;
     border-radius: 50%;
     margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-left: 5px;
     border-color: #CCCCCC;
     border-style: inset;
