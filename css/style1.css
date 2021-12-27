@@ -363,7 +363,7 @@ h2 {
 
 /* Small customizations for the about me text */
 .about-me-description {
-    text-align: justify;
+    text-align: left;
     font-size: large;
     margin-right: 20px;
     margin-top: 10px;
@@ -371,6 +371,8 @@ h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     font-weight: bold;
+    overflow-y: auto;
+    max-height: 310px;
 }
 
 /* Customizations for TEDx Image */
