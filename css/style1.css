@@ -5,6 +5,11 @@ body {
     cursor: auto;
 }
 
+/* Generic color for all links */
+a {
+    color: blue;
+}
+
 /* Generic customization for paragraph text */
 p {
     color: #CCCCCC;
@@ -334,7 +339,6 @@ h2 {
 /* Customizations for the container holding the contact boxes */
 .contact-links {
     justify-content: center;
-    position: absolute;
     margin-left: auto;
     margin-right: auto;
 }
@@ -369,7 +373,7 @@ h2 {
 }
 
 .opie {
-    width: 20%;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -396,6 +400,8 @@ h2 {
     display: flex;
     justify-content: center;
     color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 /* Customizing left side of form */
@@ -421,12 +427,16 @@ h2 {
 .resetButton {
     margin: auto;
     float: left;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Customizations for submit button */
 .submitButton {
     margin: auto;
     float: right;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Customizations for message text area (to make it scrollable and not size-adjustable) */
