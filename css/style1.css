@@ -285,12 +285,12 @@ h2 {
 .tech-goals {
     background-color: #b6ac9d;
     color: black;
-    justify-content: space-around;
     align-items: center;
     border-width: 5px;
     border-style: dotted;
     border-radius: 5px;
     margin: 10px;
+    justify-content: center;
 }
 
 /* Some customizations for the tech goals list to allow for custom bullet points */
