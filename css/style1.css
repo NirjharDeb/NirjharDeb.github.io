@@ -49,15 +49,6 @@ h2 {
     color: darkorange;
 }
 
-/* Customizes the "designed with..." statement */
-.production-statement {
-    text-decoration: none;
-    text-align: center;
-    font-size: x-large;
-    font-family: fantasy;
-    font-style: italic;
-}
-
 /* Customizations for "I am Nirjhar" in the nav bar */
 .introducing-name {
     display: inline;
@@ -116,78 +107,6 @@ h2 {
     color: black;
     text-shadow: 2px 2px 5px red;
     font-weight: bold;
-}
-
-/* Customizations for when viewing in half-screen on desktop */
-@media (max-width: 800px) {
-    
-    
-    /* Customizations for big Hello text */
-    .banner-text {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'Bungee Inline', cursive;
-        font-size: 90px;
-        text-shadow: 2px 2px 5px red;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    /* Customizations for the welcome text in the banner */
-    .banner-subtext {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'IM Fell English SC', serif;
-        font-size: 50px;
-        text-align: center;
-        color: black;
-        text-shadow: 2px 2px 5px red;
-        font-weight: bold;
-    }
-}
-
-/* Customizations for when viewing in mobile */
-@media (max-height: 500px) {
-    /* Customizations for big Hello text */
-    .banner-text {
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'Bungee Inline', cursive;
-        font-size: 90px;
-        text-shadow: 2px 2px 5px red;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    /* Customizations for the welcome text in the banner */
-    .banner-subtext {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'IM Fell English SC', serif;
-        font-size: 50px;
-        text-align: center;
-        color: black;
-        text-shadow: 2px 2px 5px red;
-        font-weight: bold;
-    }
-
-    /* Customizations for futuristic banner image */
-    .banner-image {
-        width: 100%;
-        position: relative;
-        text-align: center;
-        color: white;
-        z-index: -1;
-        object-fit: cover;
-    }
 }
 
 /* Customizations for the credit statement for the homepage artwork */
@@ -257,6 +176,7 @@ h2 {
     border-style: inset;
 }
 
+/* Customizes "What is Nirjhar doing now?" header */
 .current-work-header {
     text-align: center;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -265,6 +185,33 @@ h2 {
     margin: 0;
 }
 
+/* Contains entire section about missions, goal, and resume */
+.tech-goals {
+    background-color: #b6ac9d;
+    color: black;
+    align-items: center;
+    border-width: 5px;
+    border-style: dotted;
+    border-radius: 5px;
+    margin: 10px;
+    justify-content: center;
+}
+
+/* Customizes the description above missions header */
+.goals-statement {
+    text-align: left;
+    font-size: large;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-weight: bold;
+    overflow-y: auto;
+}
+
+/* Customizes the "Missions in Progress" header */
 .missions-header {
     text-align: left;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -276,21 +223,9 @@ h2 {
     margin-left: 5px;
 }
 
-.goals-statement {
-    text-align: left;
-    color: black;
-    margin-left: 5px;
-}
-
-.tech-goals {
-    background-color: #b6ac9d;
-    color: black;
-    align-items: center;
-    border-width: 5px;
-    border-style: dotted;
-    border-radius: 5px;
-    margin: 10px;
-    justify-content: center;
+/* Customizes the list of goals and the resume button */
+.goals-resume {
+    display: flex;
 }
 
 /* Some customizations for the tech goals list to allow for custom bullet points */
@@ -304,6 +239,7 @@ h2 {
     text-align: left;
 }
 
+/* Customizes each list item of goals list */
 .goals li {
     display: grid;
     grid-template-columns: 0 1fr;
@@ -315,6 +251,7 @@ h2 {
     font-weight: bold;
 }
 
+/* Customizes the bullet point of each list item in the goals section */
 .goals li::before {
     content: attr(data-icon);
     margin-left: 5px;
@@ -322,6 +259,7 @@ h2 {
     font-weight: lighter;
 }
 
+/* Customizes the resume button */
 .resume-button {
     background-color: #1c2841;
     color: darkorange;
@@ -331,21 +269,21 @@ h2 {
     border-color: #CCCCCC;
     border-radius: 20px;
     border-style: ridge;
-    display: inline-block;
-    justify-content: center;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: auto;
 }
 
+/* Changes resume button when hovered over */
 .resume-button:hover {
     color: #1c2841;
     background-color: darkorange;
     cursor: pointer;
 }
 
+/* Customizes the "How can I contact Nirjhar" header */
 .contact-header {
     text-align: center;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -354,11 +292,13 @@ h2 {
     margin: 0;
 }
 
+/* Contains all the means of contacting Nirjhar */
 .contact-methods {
+    display: flex;
     background-color: #b6ac9d;
     color: black;
+    align-items: top;
     justify-content: space-around;
-    align-items: center;
     border-width: 5px;
     border-style: dotted;
     border-radius: 5px;
@@ -367,28 +307,41 @@ h2 {
 
 /* Customizations for all of the contact links including their title */
 .contact-links-total {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 5px;
 }
 
 /* Customizations for the title of the contact links */
-.contact-label {
+.contact-links-title {
     display: flex;
-    justify-content: center;
     color: black;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+/* Contains Nirjhar's phone number and email addresses */
+.contact-description {
+    text-align: left;
+    font-size: large;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-weight: bold;
+    list-style-type: none;
 }
 
 /* Customizations for the container holding the contact boxes */
 .contact-links {
-    display: flex;
     justify-content: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Customizes the contact pictures (ex: LinkedIn, GitHub, Outlook, Email) */
 .contact-boxes {
     text-decoration: none;
-    margin: 10px;
 }
 
 /* When hovering over contact boxes, they shake */
@@ -415,9 +368,28 @@ h2 {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+.opie {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Basic customizations for entire contact form */
+.contact-form {
+    text-align: center;
+    max-width: fit-content;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Customizes contact form title */
 .contact-form-title {
     color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
+
 
 /* Customizes both left and right sides of form (but not the form title and submit button) */
 .form-inputs {
@@ -436,21 +408,6 @@ h2 {
 .right-form {
     padding: 10px;
     float: right;
-}
-
-/* Basic customizations for entire contact form */
-.contact-form {
-    text-align: center;
-    border-style: groove;
-    border-width: 5px;
-    border-color: black;
-    border-radius: 10px;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    padding: 10px;
 }
 
 /* Customizing positioning of the bottom section of the contact form */
@@ -476,4 +433,87 @@ h2 {
 .message {
     overflow-y: scroll;
     resize: none;
+}
+
+
+/* Customizes the "designed with..." statement */
+.production-statement {
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    font-family: fantasy;
+    font-style: italic;
+}
+
+/* Customizations for when viewing in half-screen on desktop */
+@media (max-width: 800px) {
+    
+    
+    /* Customizations for big Hello text */
+    .banner-text {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Bungee Inline', cursive;
+        font-size: 90px;
+        text-shadow: 2px 2px 5px red;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* Customizations for the welcome text in the banner */
+    .banner-subtext {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'IM Fell English SC', serif;
+        font-size: 50px;
+        text-align: center;
+        color: black;
+        text-shadow: 2px 2px 5px red;
+        font-weight: bold;
+    }
+}
+
+/* Customizations for when viewing in mobile */
+@media only screen and (max-device-width: 480px) {
+    /* Customizations for big Hello text */
+    .banner-text {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Bungee Inline', cursive;
+        font-size: 90px;
+        text-shadow: 2px 2px 5px red;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* Customizations for the welcome text in the banner */
+    .banner-subtext {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'IM Fell English SC', serif;
+        font-size: 50px;
+        text-align: center;
+        color: black;
+        text-shadow: 2px 2px 5px red;
+        font-weight: bold;
+    }
+
+    /* Customizations for futuristic banner image */
+    .banner-image {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        color: white;
+        z-index: -1;
+        object-fit: cover;
+
+    }
 }
