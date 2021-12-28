@@ -329,7 +329,6 @@ h2 {
     font-size: large;
     margin-right: 5px;
     margin-top: 10px;
-    margin-bottom: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     font-weight: bold;
@@ -338,14 +337,14 @@ h2 {
 
 /* Customizations for the container holding the contact boxes */
 .contact-links {
+    display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Customizes the contact pictures (ex: LinkedIn, GitHub, Outlook, Email) */
 .contact-boxes {
     text-decoration: none;
+    margin: 5px;
 }
 
 /* When hovering over contact boxes, they shake */
