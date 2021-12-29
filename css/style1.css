@@ -3,6 +3,7 @@ body {
     background-color:#1c2841;
     margin: 0;
     cursor: auto;
+    -webkit-text-size-adjust: none;
 }
 
 /* Generic color for all links */
@@ -74,10 +75,9 @@ h2 {
 .banner-image {
     width: 100%;
     height: 100vh;
-    position: relative;
     text-align: center;
     color: white;
-    z-index: -1;
+    z-index: -11;
     object-fit: cover;
 }
 
@@ -87,31 +87,42 @@ h2 {
     display: inline;
 }
 
+.banner-text-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0px;
+    position: absolute;
+    min-width: 100%;
+    top: 10%;
+}
+
 /* Customizations for big Hello text */
 .banner-text {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: 'Bungee Inline', cursive;
-    font-size: 90px;
+    font-size: 15vmin;
     text-shadow: 2px 2px 5px red;
     text-align: center;
     font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
 }
 
 /* Customizations for the welcome text in the banner */
 .banner-subtext {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: 'IM Fell English SC', serif;
-    font-size: 50px;
+    font-size: 9vmin;
     text-align: center;
     color: black;
     text-shadow: 2px 2px 5px red;
     font-weight: bold;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 50%;
 }
 
 /* Customizations for the credit statement for the homepage artwork */
@@ -376,6 +387,7 @@ h2 {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 
 /* Basic customizations for entire contact form */
@@ -385,8 +397,7 @@ h2 {
     margin-bottom: 10px;
     margin-right: 5px;
     padding: 10px;
-    width: auto;
-    height: auto;
+    max-width: fit-content;
 }
 
 /* Customizes contact form title */
@@ -459,34 +470,6 @@ h2 {
 
 /* Customizations for less than fullscreen in desktop */
 @media (max-width: 1000px) {
-
-    /* Customizations for big Hello text */
-    .banner-text {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'Bungee Inline', cursive;
-        font-size: 90px;
-        text-shadow: 2px 2px 5px red;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    /* Customizations for the welcome text in the banner */
-    .banner-subtext {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'IM Fell English SC', serif;
-        font-size: 50px;
-        text-align: center;
-        color: black;
-        text-shadow: 2px 2px 5px red;
-        font-weight: bold;
-    }
-
     .contact-methods {
         flex-direction: column;
         align-items: center;
@@ -517,33 +500,6 @@ h2 {
 
 /* Customizations for when viewing in mobile */
 @media only screen and (max-device-width: 480px) {
-    /* Customizations for big Hello text */
-    .banner-text {
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'Bungee Inline', cursive;
-        font-size: 90px;
-        text-shadow: 2px 2px 5px red;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    /* Customizations for the welcome text in the banner */
-    .banner-subtext {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'IM Fell English SC', serif;
-        font-size: 50px;
-        text-align: center;
-        color: black;
-        text-shadow: 2px 2px 5px red;
-        font-weight: bold;
-    }
-
     /* Customizations for futuristic banner image */
     .banner-image {
         width: 100%;
