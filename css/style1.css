@@ -88,41 +88,21 @@ h2 {
 }
 
 .banner-text-total {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: absolute;
-    justify-content: space-around;
-    min-width: 100%;
-    top: 10%;
-}
-
-/* Customizations for big Hello text */
-.banner-text {
-    font-family: 'Bungee Inline', cursive;
-    font-size: 15vmin;
-    text-shadow: 2px 2px 5px red;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-}
-
-/* Customizations for the welcome text in the banner */
-.banner-subtext {
-    font-family: 'IM Fell English SC', serif;
-    font-size: 9vmin;
-    text-align: center;
+    top: 20%;
     color: black;
     text-shadow: 2px 2px 5px red;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 9vmin;
     font-weight: bold;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    width: 50%;
+}
+
+.banner-text-total em {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 15vmin;
 }
 
 /* Customizations for the credit statement for the homepage artwork */
@@ -133,7 +113,7 @@ h2 {
     color: black;
     font-style: italic;
     font-weight: bold;
-    font-size: large;
+    font-size: 3vmin;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: right;
 }
