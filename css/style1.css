@@ -4,6 +4,12 @@ body {
     margin: 0;
     cursor: auto;
     -webkit-text-size-adjust: none;
+    max-width: 100%;
+}
+
+html,body {
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 /* Generic color for all links */
@@ -35,9 +41,9 @@ h2 {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 7px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 5vmin;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     position: absolute;
@@ -69,6 +75,14 @@ h2 {
     padding: 7px 16px;
     z-index: 10;
     justify-content: center;
+    overflow: hidden;
+    font-size: 2.5vmin;
+}
+
+/* Blurry red shadow effect for the "hello" text */
+.hello {
+    text-shadow: 2px 2px 5px red;
+    display: inline;
 }
 
 /* Customizations for futuristic banner image */
@@ -79,12 +93,6 @@ h2 {
     color: white;
     z-index: -11;
     object-fit: cover;
-}
-
-/* Blurry red shadow effect for the "hello" text */
-.hello {
-    text-shadow: 2px 2px 5px red;
-    display: inline;
 }
 
 .banner-text-total {
@@ -141,6 +149,7 @@ h2 {
     border-style: dotted;
     border-radius: 5px;
     margin: 10px;
+    overflow: hidden;
 }
 
 /* Small customizations for the about me text */
@@ -189,6 +198,7 @@ h2 {
     margin: 10px;
     justify-content: center;
     display: flex;
+    overflow: hidden;
 }
 
 /* Customizes the description above missions header */
@@ -444,8 +454,9 @@ h2 {
     text-decoration: none;
     text-align: center;
     font-size: x-large;
-    font-family: fantasy;
+    font-family: 'IM Fell English SC', serif;
     font-style: italic;
+    padding: 5px;
 }
 
 /* Customizations for less than fullscreen in desktop */
