@@ -35,11 +35,23 @@ h2 {
     position: fixed;
     width: 100%;
     z-index: 10;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Customizations for only the nav pages in the navbar */
+.navPage {
+    width: 100%;
+    display: flex;
+    justify-content: left;
 }
 
 /* General customizations for links in the navbar */
-.navbar a {
-    float: left;
+.navPage li a {
+    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 7px 16px;
@@ -47,7 +59,6 @@ h2 {
     font-size: 5vmin;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    position: absolute;
 }
 
 /* Changes in background color and text color when hovering over links in the navigation bar */
@@ -64,11 +75,7 @@ h2 {
 
 /* Customizations for "I am Nirjhar" in the nav bar */
 .introducing-name {
-    display: inline;
-}
-
-/* Customizations for "Hello! I am Nirjhar" in the nav bar */
-.introducing-me {
+    display: block;
     font-weight: bold;
     text-align: center;
     color: orange;
@@ -77,13 +84,15 @@ h2 {
     z-index: 10;
     justify-content: center;
     overflow: hidden;
-    font-size: 2.5vmin;
+    font-size: 5vmin;
+    white-space: nowrap;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Blurry red shadow effect for the "hello" text */
-.hello {
+.introducing-name em {
     text-shadow: 2px 2px 5px red;
-    display: inline;
 }
 
 /* Customizations for futuristic banner image */
