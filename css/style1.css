@@ -40,18 +40,20 @@ h2 {
     padding: 0;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 /* Customizations for only the nav pages in the navbar */
-.navPage {
+.navPages {
     width: 100%;
     display: flex;
     justify-content: left;
+    float: left;
 }
 
 /* General customizations for links in the navbar */
-.navPage li a {
-    display: block;
+.navPage {
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
     padding: 7px 16px;
@@ -59,16 +61,17 @@ h2 {
     font-size: 5vmin;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    position: relative;
 }
 
 /* Changes in background color and text color when hovering over links in the navigation bar */
-.navbar a:hover {
+.navPage:hover {
     background-color: #ddd;
     color: black;
 }
 
-/* Change color of navigation bar home link */
-.navbar a.homePage {
+/* Change color of active nav bar link */
+.active {
     background-color: black;
     color: darkorange;
 }
@@ -82,12 +85,15 @@ h2 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 7px 16px;
     z-index: 10;
-    justify-content: center;
     overflow: hidden;
     font-size: 5vmin;
     white-space: nowrap;
-    margin: 0 auto;
+    margin-right: 15px;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: center;
+    width: 100%;
 }
 
 /* Blurry red shadow effect for the "hello" text */
@@ -541,8 +547,8 @@ h2 {
         width: 100%;
     }
 
-    .introducing-me {
-        float: right;
+    .introducing-name {
+        font-size: 5vmin;
     }
 
     .production-statement {
@@ -568,5 +574,21 @@ h2 {
     .banner-credit {
         font-size: 5vmin;
         font-weight: bold;
+    }
+
+    .gamesPage {
+        display: none !important;
+    }
+
+    .navPages {
+        width: 50%;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block !important;
     }
 }
