@@ -47,34 +47,6 @@ window.onresize = function() {
     }
 }
 
-document.getElementById("homePage").addEventListener("click", dropdownMenu);
-
-function showDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function closeDropdown() {
-    if (window.matchMedia('screen and (max-device-width: 480px)').matches) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    } else {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-
 //Listen for a click (i.e., when the user clicks the submit button) in the contact form
 document.getElementById("submitButton").addEventListener("click", submitForm);
 
