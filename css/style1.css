@@ -515,6 +515,10 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 15vmin;
+  border-width: 5px;
+  border-style: ridge;
+  border-color: slateblue;
+  border-radius: 20px;
 }
 
 /* Customizes the "designed with..." statement */
