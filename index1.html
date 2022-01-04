@@ -23,27 +23,33 @@
         <div class="navPages">
             <li>
                 <div>
-                    <a class="navPage" id="homePage" href="index.html">Home</a>
+                    <a class="homePage navPage" href="index.html" id="home1">Home</a>
                 </div>
             </li>
             <li><a class="active navPage gamesPage" href="index1.html">Games</a></li>
+            <li>
+                <button class="menu active navPage">Menu</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="index1.html">Games</a>
+                </div>
+            </li>
         </div>
         <li>
             <div class="introducing-me">
-                <h1 class="introducing-name"><em id="hello">Hello!</em> I am Nirjhar Deb!</h1>
+                <h1 class="introducing-name"><em id="hello1">Hello!</em> I am Nirjhar Deb!</h1>
             </div>
         </li>
     </ul>
+
+    <iframe src="game/game1/game1.html" loading="lazy" class="gameFrame"></iframe>
 
     <!-- A Sweet Production Statement -->
     <p class="production-statement">
         Designed with HTML, CSS, JavaScript, Firebase, ❤️, and gallons of ☕!
     </p>
 
-    <!-- SMTP encryption -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <!-- Async link to JS script1 -->
-    <script async src="scripts/script1.js" type="module"></script>
+    <!-- Async link to JS script -->
+    <script async src="scripts/script1.js"></script>
 </body>
 </html>
