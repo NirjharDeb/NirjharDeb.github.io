@@ -76,6 +76,7 @@ h2 {
     color: darkorange;
 }
 
+/* Customizations for making the menu button disappear in desktop mode */
 .menu {
     border: 0px;
     display: none;
@@ -479,6 +480,7 @@ h2 {
     resize: none;
 }
 
+/* Customizations for iframe containing the game */
 .gameFrame {
     display: block;
     margin-left: auto;
@@ -530,7 +532,6 @@ h2 {
 
 /* Customizations for when viewing in mobile */
 @media only screen and (max-device-width: 480px) {
-
     .banner-image {
         width: 100%;
         position: relative;
