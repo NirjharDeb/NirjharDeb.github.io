@@ -25,13 +25,13 @@ document.getElementById("submitButton").addEventListener("click", submitForm);
 //Once the user hits the submit button, grab values from the form
 function submitForm(e) {
     e.preventDefault();
-    
+
     //Get input values
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let phone = document.getElementById("phone").value;
     let message = document.getElementById("message").value;
-    saveContactInfo(name,email,phone,message);
+    saveContactInfo(name, email, phone, message);
 }
 
 //Check information for correct format
@@ -47,13 +47,13 @@ function checkContactFormat(name, email, phone, message) {
     );
 
     //Various checks on the form for format and completion
-    if(name === "" || email === "" || phone === "" || message === "") {
+    if (name === "" || email === "" || phone === "" || message === "") {
         window.alert("One or more fields of the form are empty. Please complete all of the fields.");
-    } else if(emailTest == null && phoneTest == null) {
+    } else if (emailTest == null && phoneTest == null) {
         window.alert("Email address and phone number inputted incorrectly. Please enter your email in the format of johndoe@email.com, and enter your phone number in the format of ### ### ####, ###-###-####, or ##########.");
-    } else if(emailTest == null) {
+    } else if (emailTest == null) {
         window.alert("Email address inputted incorrectly. Please enter your email in the format of johndoe@email.com.");
-    } else if(phoneTest == null) {
+    } else if (phoneTest == null) {
         window.alert("Phone number inputted incorrectly. Please enter your phone number in the format of ### ### ####, ###-###-####, or ##########.");
     } else {
         contactFormatCheck = true;
@@ -63,7 +63,7 @@ function checkContactFormat(name, email, phone, message) {
 //Save details from the form to Firebase database
 function saveContactInfo(name, email, phone, message) {
     checkContactFormat(name, email, phone, message);
-    if(contactFormatCheck) {
+    if (contactFormatCheck) {
         push(ref(db, 'messengers/' + name + "/"), {
             //Attempt to submit user data to Firebase
             name: name,
@@ -71,29 +71,29 @@ function saveContactInfo(name, email, phone, message) {
             phone: phone,
             message: message
         })
-        .then(() => {
-            //Submitted successfully and sends an email to me so that I can reply on time
-            Email.send({
-                SecureToken : "5735a6f0-ac77-4cfe-96e6-21fe4661feb3",
-                To : 'nirjhardeb03@gmail.com',
-                From : "nirjhardeb03@gmail.com",
-                Subject : "Personal Portfolio: Message from " + document.getElementById("name").value + "! | Email: " + document.getElementById("email").value + " | Phone: " + document.getElementById("phone").value,
-                Body : document.getElementById("message").value
-            }).then(
-                window.alert("Form submitted successfully! I have received your message and will contact you via email within a week. If I do not contact you, please feel free to call me at 470-832-9200!")
-            );
+            .then(() => {
+                //Submitted successfully and sends an email to me so that I can reply on time
+                Email.send({
+                    SecureToken: "5735a6f0-ac77-4cfe-96e6-21fe4661feb3",
+                    To: 'nirjhardeb03@gmail.com',
+                    From: "nirjhardeb03@gmail.com",
+                    Subject: "Personal Portfolio: Message from " + document.getElementById("name").value + "! | Email: " + document.getElementById("email").value + " | Phone: " + document.getElementById("phone").value,
+                    Body: document.getElementById("message").value
+                }).then(
+                    window.alert("Form submitted successfully! I have received your message and will contact you via email within a week. If I do not contact you, please feel free to call me at 470-832-9200!")
+                );
 
-            //Resets the form
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("phone").value = "";
-            document.getElementById("message").value = "";
-            contactFormatCheck = false;
-        })
-        .catch((error) => {
-            window.alert("Failed to submit form. Please try again.");
-            console.log(error);
-        });
+                //Resets the form
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("message").value = "";
+                contactFormatCheck = false;
+            })
+            .catch((error) => {
+                window.alert("Failed to submit form. Please try again.");
+                console.log(error);
+            });
     }
 }
 
@@ -102,7 +102,7 @@ document.getElementById("resetButton").addEventListener("click", resetForm);
 
 //Clears all the fields of the contact form
 function resetForm() {
-    if(window.confirm("Are you sure that you would like to reset the form?")) {
+    if (window.confirm("Are you sure that you would like to reset the form?")) {
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("phone").value = "";

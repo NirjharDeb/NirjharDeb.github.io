@@ -1,640 +1,670 @@
 /* Customize body's background color */
 body {
-    background-color:#1c2841;
-    margin: 0;
-    cursor: auto;
-    -webkit-text-size-adjust: none;
-    max-width: 100%;
+  background-color: #1c2841;
+  margin: 0;
+  cursor: auto;
+  -webkit-text-size-adjust: none;
+  max-width: 100%;
 }
 
 /* Stop website from overflowing when in mobile/tablet mode */
-html,body {
-    overflow-x: hidden;
-    box-sizing: border-box;
+html,
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* Generic color for all links */
 a {
-    color: blue;
+  color: blue;
 }
 
 /* Generic customization for paragraph text */
 p {
-    color: #CCCCCC;
+  color: #cccccc;
 }
 
 /* Generic customization for header 2 text */
 h2 {
-    color: #CCCCCC;
+  color: #cccccc;
 }
 
 /* Add background-color and scroll bar disabled for the navigation bar */
 .navbar {
-    background-color: #004953;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
+  background-color: #004953;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 /* Customizations for only the nav pages in the navbar */
 .navPages {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    float: left;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  float: left;
 }
 
 /* General customizations for links in the navbar */
 .navPage {
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 7px 16px;
-    text-decoration: none;
-    font-size: 5vmin;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    position: relative;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 7px 16px;
+  text-decoration: none;
+  font-size: 5vmin;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
 }
 
 /* Changes in background color and text color when hovering over links in the navigation bar */
 .navPage:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 /* Change color of active nav bar link */
 .active {
-    background-color: black;
-    color: darkorange;
+  background-color: black;
+  color: darkorange;
 }
 
 /* Customizations for making the menu button disappear in desktop mode */
 .menu {
-    border: 0px;
-    display: none;
+  border: 0px;
+  display: none;
 }
 
 .dropdown {
-    display: none !important;
+  display: none !important;
 }
 
 .dropdown-content {
-    display: none !important;
+  display: none !important;
 }
 
 /* Customizations for "I am Nirjhar" in the nav bar */
 .introducing-name {
-    display: block;
-    font-weight: bold;
-    text-align: center;
-    color: orange;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 7px 16px;
-    z-index: 10;
-    overflow: hidden;
-    font-size: 5vmin;
-    white-space: nowrap;
-    margin-right: 15px;
-    margin-left: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-    width: 100%;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  color: orange;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 7px 16px;
+  z-index: 10;
+  overflow: hidden;
+  font-size: 5vmin;
+  white-space: nowrap;
+  margin-right: 15px;
+  margin-left: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  width: 100%;
 }
 
 /* Blurry red shadow effect for the "hello" text */
 .introducing-name em {
-    text-shadow: 2px 2px 5px red;
+  text-shadow: 2px 2px 5px red;
 }
 
 /* Customizations for futuristic banner image */
 .banner-image {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    color: white;
-    z-index: -11;
-    object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  z-index: -11;
+  object-fit: cover;
 }
 
 /* Customizes all of the text (except credit statement) in the banner */
 .banner-text-total {
-    position: absolute;
-    top: 20%;
-    color: black;
-    text-shadow: 2px 2px 5px red;
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    font-family: 'IM Fell English SC', serif;
-    font-size: 9vmin;
-    font-weight: bold;
+  position: absolute;
+  top: 20%;
+  color: black;
+  text-shadow: 2px 2px 5px red;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  font-family: "IM Fell English SC", serif;
+  font-size: 9vmin;
+  font-weight: bold;
 }
 
 /* Customizes the hello text in the banner (not the navigation bar) */
 .banner-text-total em {
-    font-family: 'Bungee Inline', cursive;
-    font-size: 15vmin;
+  font-family: "Bungee Inline", cursive;
+  font-size: 15vmin;
 }
 
 /* Customizations for the credit statement for the homepage artwork */
 .banner-credit {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    color: black;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 3.5vmin;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: right;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3.5vmin;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: right;
 }
 
 /* Customizing the link in the credit statement */
 .banner-credit a {
-    color: blue;
+  color: blue;
 }
 
 /* Customizations for "Who is Nirjhar Deb?" Header */
 .about-me-header {
-    text-align: center;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: 5vmin;
-    margin: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 5vmin;
+  margin: 0;
 }
 
 /* Customizations for entire about me section */
 .about-me {
-    display: flex;
-    justify-content: center;
-    background-color: #b6ac9d;
-    border-width: 5px;
-    border-style: dotted;
-    border-radius: 5px;
-    margin: 10px;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: #b6ac9d;
+  border-width: 5px;
+  border-style: dotted;
+  border-radius: 5px;
+  margin: 10px;
+  overflow: hidden;
 }
 
 /* Small customizations for the about me text */
 .about-me-description {
-    text-align: left;
-    font-size: medium;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    font-weight: bold;
+  text-align: left;
+  font-size: medium;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+  font-weight: bold;
 }
 
 /* Customizations for TEDx Image */
 .tedx-image {
-    width: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-left: 5px;
-    border-color: #CCCCCC;
-    border-style: inset;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left: 5px;
+  border-color: #cccccc;
+  border-style: inset;
 }
 
 /* Customizes "What is Nirjhar doing now?" header */
 .current-work-header {
-    text-align: center;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: 5vmin;
-    margin: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 5vmin;
+  margin: 0;
 }
 
 /* Contains entire section about missions, goal, and resume */
 .tech-goals {
-    background-color: #b6ac9d;
-    color: black;
-    align-items: center;
-    border-width: 5px;
-    border-style: dotted;
-    border-radius: 5px;
-    margin: 10px;
-    justify-content: center;
-    display: flex;
-    overflow: hidden;
+  background-color: #b6ac9d;
+  color: black;
+  align-items: center;
+  border-width: 5px;
+  border-style: dotted;
+  border-radius: 5px;
+  margin: 10px;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
 }
 
 /* Customizes the "Missions in Progress" header */
 .missions-header {
-    text-align: left;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: 4.5vmin;
-    color: black;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 5px;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 4.5vmin;
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
 }
 
 /* Customizes the description below missions header */
 .goals-statement {
-    text-align: left;
-    font-size: medium;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    font-weight: bold;
-    overflow-y: auto;
+  text-align: left;
+  font-size: medium;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+  font-weight: bold;
+  overflow-y: auto;
 }
 
 /* Customizes the list of goals and the resume button */
 .goals-resume {
-    display: flex;
+  display: flex;
 }
 
 /* Some customizations for the tech goals list to allow for custom bullet points */
 .goals {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    gap: 0.5rem;
-    justify-content: left;
-    text-align: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  justify-content: left;
+  text-align: left;
 }
 
 /* Customizes each list item of goals list */
 .goals li {
-    display: grid;
-    grid-template-columns: 0 1fr;
-    gap: 1.75em;
-    align-items: start;
-    font-size: 20px;
-    line-height: 1.55;
-    justify-self: left;
-    font-weight: bold;
+  display: grid;
+  grid-template-columns: 0 1fr;
+  gap: 1.75em;
+  align-items: start;
+  font-size: 20px;
+  line-height: 1.55;
+  justify-self: left;
+  font-weight: bold;
 }
 
 /* Customizes the bullet point of each list item in the goals section */
 .goals li::before {
-    content: attr(data-icon);
-    margin-left: 5px;
-    justify-content: center;
-    font-weight: lighter;
+  content: attr(data-icon);
+  margin-left: 5px;
+  justify-content: center;
+  font-weight: lighter;
 }
 
 /* Customizes the resume button */
 .resume-button {
-    background-color: #1c2841;
-    color: darkorange;
-    font-size: x-large;
-    font-family: 'Bungee Inline', cursive;
-    border-width: 5px;
-    border-color: #CCCCCC;
-    border-radius: 20px;
-    border-style: ridge;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 5px;
-    margin-left: auto;
+  background-color: #1c2841;
+  color: darkorange;
+  font-size: x-large;
+  font-family: "Bungee Inline", cursive;
+  border-width: 5px;
+  border-color: #cccccc;
+  border-radius: 20px;
+  border-style: ridge;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: auto;
 }
 
 /* Changes resume button when hovered over */
 .resume-button:hover {
-    color: #1c2841;
-    background-color: darkorange;
-    cursor: pointer;
+  color: #1c2841;
+  background-color: darkorange;
+  cursor: pointer;
 }
 
 /* Customizes the "How can I contact Nirjhar" header */
 .contact-header {
-    text-align: center;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: 5vmin;
-    margin: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 5vmin;
+  margin: 0;
 }
 
 /* Contains all the means of contacting Nirjhar */
 .contact-methods {
-    display: flex;
-    background-color: #b6ac9d;
-    color: black;
-    align-items: top;
-    justify-content: space-around;
-    border-width: 5px;
-    border-style: dotted;
-    border-radius: 5px;
-    margin: 10px;
-    overflow-wrap: break-word;
+  display: flex;
+  background-color: #b6ac9d;
+  color: black;
+  align-items: top;
+  justify-content: space-around;
+  border-width: 5px;
+  border-style: dotted;
+  border-radius: 5px;
+  margin: 10px;
+  overflow-wrap: break-word;
 }
 
 /* Customizations for all of the contact links including their title */
 .contact-links-total {
-    margin-right: 5px;
-    margin-left: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 /* Customizations for the title of the contact links */
 .contact-links-title {
-    display: flex;
-    color: black;
-    margin-bottom: 0px;
-    margin-top: 10px;
+  display: flex;
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 /* Contains Nirjhar's phone number and email addresses */
 .contact-description {
-    text-align: left;
-    font-size: large;
-    margin-right: 5px;
-    margin-top: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    font-weight: bold;
-    list-style-type: none;
+  text-align: left;
+  font-size: large;
+  margin-right: 5px;
+  margin-top: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+  font-weight: bold;
+  list-style-type: none;
 }
 
 /* Customizations for the container holding the contact boxes */
 .contact-links {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Customizes the contact pictures (ex: LinkedIn, GitHub, Outlook, Email) */
 .contact-boxes {
-    text-decoration: none;
-    margin: 5px;
+  text-decoration: none;
+  margin: 5px;
 }
 
 /* When hovering over contact boxes, they shake */
 .contact-boxes img:hover {
-    /* Start the shake animation and make the animation last for 1.25 seconds */
-    animation: shake 1.25s;
-  
-    /* When the animation is finished, start again */
-    animation-iteration-count: infinite;
+  /* Start the shake animation and make the animation last for 1.25 seconds */
+  animation: shake 1.25s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
 }
 
 /* Frames for shake animation */
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 /* Customization for opie portrait in contact section */
 .opie {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 /* Basic customizations for entire contact form */
 .contact-form {
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-right: 5px;
-    padding: 10px;
-    max-width: fit-content;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  padding: 10px;
+  max-width: fit-content;
 }
 
 /* Customizes contact form title */
 .contact-form-title {
-    color: black;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* Customizes both left and right sides of form (but not the form title and submit button) */
 .form-inputs {
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Customizing left side of form */
 .left-form {
-    padding: 10px;
-    float: left;
+  padding: 10px;
+  float: left;
 }
 
 /* Customizing right side of form */
 .right-form {
-    padding: 10px;
-    float: right;
+  padding: 10px;
+  float: right;
 }
 
 /* Customizing positioning of the bottom section of the contact form */
 .bottom-form {
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Customizations for reset button */
 .resetButton {
-    margin: auto;
-    float: left;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: auto;
+  float: left;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* Customizations for submit button */
 .submitButton {
-    margin: auto;
-    float: right;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: auto;
+  float: right;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* Customizations for message text area (to make it scrollable and not size-adjustable) */
 .message {
-    overflow-y: scroll;
-    resize: none;
+  overflow-y: scroll;
+  resize: none;
 }
 
-/* Customizations for iframe containing the game */
-.gameFrame {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15vmin;
-    max-width: fit-content;
-    max-height: fit-content;
+/* Customizations for iframe containing the project */
+.projectFrame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vmin;
 }
 
 /* Customizes the "designed with..." statement */
 .production-statement {
-    text-decoration: none;
-    text-align: center;
-    font-size: x-large;
-    font-family: 'IM Fell English SC', serif;
-    font-style: italic;
-    padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: x-large;
+  font-family: "IM Fell English SC", serif;
+  font-style: italic;
+  padding: 5px;
 }
 
 /* Customizations for less than fullscreen in desktop */
 @media (max-width: 1000px) {
-    .contact-methods {
-        flex-direction: column;
-        align-items: center;
-    }
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .tech-goals {
-        flex-direction: column;
-        align-items: center;
-    }
+  .tech-goals {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .about-me {
-        flex-direction: column;
-        align-items: center;
-    }
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .goals-resume {
-        flex-direction: column;
-        align-items: center;
-    }
+  .goals-resume {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .resume-button {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  .resume-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 /* Customizations for when viewing in mobile */
 @media only screen and (max-device-width: 480px) {
-    .banner-image {
-        width: 100%;
-        position: relative;
-        text-align: center;
-        color: white;
-        z-index: -1;
-        object-fit: cover;
-    }
+  .banner-image {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: -1;
+    object-fit: cover;
+  }
 
-    .contact-methods {
-        flex-direction: column;
-        align-items: center;
-    }
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .tech-goals {
-        flex-direction: column;
-        align-items: center;
-    }
+  .tech-goals {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .about-me {
-        flex-direction: column;
-        align-items: center;
-    }
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .about-me-description {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
+  .about-me-description {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 
-    .contact-input {
-        width: 100%;
-    }
+  .contact-input {
+    width: 100%;
+  }
 
-    .message {
-        width: 100%;
-    }
+  .message {
+    width: 100%;
+  }
 
-    .introducing-name {
-        font-size: 5vmin;
-    }
+  .introducing-name {
+    font-size: 5vmin;
+  }
 
-    .production-statement {
-        font-size: 5vmin;
-    }
+  .production-statement {
+    font-size: 5vmin;
+  }
 
-    .about-me-header {
-        font-size: 7vmin;
-    }
+  .about-me-header {
+    font-size: 7vmin;
+  }
 
-    .current-work-header {
-        font-size: 7vmin;
-    }
+  .current-work-header {
+    font-size: 7vmin;
+  }
 
-    .missions-header {
-        font-size: 6vmin;
-    }
+  .missions-header {
+    font-size: 6vmin;
+  }
 
-    .contact-header {
-        font-size: 7vmin;
-    }
-    
-    .banner-credit {
-        font-size: 5vmin;
-        font-weight: bold;
-    }
+  .contact-header {
+    font-size: 7vmin;
+  }
 
-    .gamesPage {
-        display: none !important;
-    }
+  .banner-credit {
+    font-size: 5vmin;
+    font-weight: bold;
+  }
 
-    .homePage {
-        display: none !important;
-    }
+  .projectsPage {
+    display: none !important;
+  }
 
-    .navPages {
-        width: 50%;
-    }
+  .homePage {
+    display: none !important;
+  }
 
-    .menu {
-        display: inline-block !important;
-        position: relative;
-    }
+  .navPages {
+    width: 50%;
+  }
 
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
+  .menu {
+    display: inline-block !important;
+    position: relative;
+  }
 
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
-      
-    .dropdown-content a:hover {background-color: #f1f1f1;}
-      
-    .menu:hover, .menu:active + .dropdown-content {
-        display: block;
-    }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .menu:hover,
+  .menu:active + .dropdown-content {
+    display: block;
+  }
 }
