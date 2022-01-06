@@ -108,7 +108,7 @@ h2 {
 
 /* Makes text-color of each dropdown item black */
 .dropdown-item {
-  color: black
+  color: black;
 }
 
 /* Hide menu button */
@@ -672,7 +672,7 @@ h2 {
     resize: none;
   }
 
-  input:checked~ul.dropdown-content {
+  input:checked ~ ul.dropdown-content {
     display: inline-block;
     position: absolute;
     width: fit-content;
