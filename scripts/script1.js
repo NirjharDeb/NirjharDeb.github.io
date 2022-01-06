@@ -1,5 +1,5 @@
 //Establish different variables used to change "Hello!" to other languages
-var helloText = ["Hello!", "¡Hola!", "Hallo!", "Olá!", "Namaste!", "Halló!", "Hej!"];
+var helloText = ["Hello!", "¡Hola!", "Hallo!", "Olá!", "Halló!", "Hej!"];
 var helloCounter = 0;
 var helloRepeatMethod = setInterval(changeHello, 2000);
 
