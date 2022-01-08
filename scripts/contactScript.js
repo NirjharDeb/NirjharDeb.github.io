@@ -72,12 +72,13 @@ function saveContactInfo(name, email, phone, message) {
             message: message
         })
             .then(() => {
+                //Save user contact information to a .txt file
                 var userInfo = "Name: " + document.getElementById("name").value + "\nEmail: " + document.getElementById("email").value + "\nPhone: " + document.getElementById("phone").value + "\nMessage: " + document.getElementById("message").value;                
                 let userInfoDoc = document.createElement('userInfoDoc');
                 userInfoDoc.href = "data:application/octet-stream,"+encodeURIComponent(userInfo);
                 userInfoDoc.download = 'userInfo.txt';
 
-                //Submitted successfully and sends an email to me so that I can reply on time
+                //Submitted successfully and sends an email to me and the user containing the user's contact information in a .txt file
                 Email.send({
                     SecureToken: "5735a6f0-ac77-4cfe-96e6-21fe4661feb3",
                     To: ['nirjhardeb03@gmail.com',document.getElementById("email").value],
