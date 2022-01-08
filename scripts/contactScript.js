@@ -72,15 +72,25 @@ function saveContactInfo(name, email, phone, message) {
             message: message
         })
             .then(() => {
+                var userInfo = "Name: " + document.getElementById("name").value + "\nEmail: " + document.getElementById("email").value + "\nPhone: " + document.getElementById("phone").value + "\nMessage: " + document.getElementById("message").value;                
+                let userInfoDoc = document.createElement('userInfoDoc');
+                userInfoDoc.href = "data:application/octet-stream,"+encodeURIComponent(userInfo);
+                userInfoDoc.download = 'userInfo.txt';
+
                 //Submitted successfully and sends an email to me so that I can reply on time
                 Email.send({
                     SecureToken: "5735a6f0-ac77-4cfe-96e6-21fe4661feb3",
-                    To: 'nirjhardeb03@gmail.com',
+                    To: ['nirjhardeb03@gmail.com',document.getElementById("email").value],
                     From: "nirjhardeb03@gmail.com",
-                    Subject: "Personal Portfolio: Message from " + document.getElementById("name").value + "! | Email: " + document.getElementById("email").value + " | Phone: " + document.getElementById("phone").value,
-                    Body: document.getElementById("message").value
+                    Subject: "Nirjhar Deb's Personal Portfolio: Contact form successfully sent to Nirjhar from " + document.getElementById("name").value,
+                    Body: "Greetings " + document.getElementById("name").value + "! Attached to this message is a text file containing your responses to my contact form to keep in your personal records. Have a nice day! ~~~ Nirjhar",
+                        Attachments : [
+                        {
+                            name : "userInfo.txt",
+                            path : userInfoDoc.href
+                        }]
                 }).then(
-                    window.alert("Form submitted successfully! I have received your message and will contact you via email within a week. If I do not contact you, please feel free to call me at 470-832-9200!")
+                    window.alert("Form submitted successfully! I have received your message and will email you within a week.\n\nIf your email address is valid, you will receive an automatically generated email containing your responses to this form. Occasionally, this email may find its way into your spam/junk folder.\n\nHave a fantastic day!")
                 );
 
                 //Resets the form

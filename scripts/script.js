@@ -17,14 +17,3 @@ function changeHello() {
 window.onload = function () {
     changeHello;
 };
-
-//Switches to Menu button for dropdown menu in mobile mode
-window.onresize = function () {
-    if (window.matchMedia('screen and (max-device-width: 480px)').matches) {
-        document.getElementById("home").innerHTML = "Menu";
-        document.getElementById("home").setAttribute("href", "javascript:void(0)");
-    } else if (!(window.matchMedia('screen and (max-device-width: 480px)').matches)) {
-        document.getElementById("home").innerHTML = "Home";
-        document.getElementById("home").setAttribute("href", "index.html");
-    }
-}
