@@ -46,9 +46,14 @@ function checkContactFormat(name, email, phone, message) {
         /^\(?([0-9]{3})\)?[- ]?([0-9]{3})[- ]?([0-9]{4})$/
     );
 
+    //Helps bypass the phone test if phone number is not inputted
+    if(phone === "") {
+        phoneTest = 1;
+    }
+
     //Various checks on the form for format and completion
-    if (name === "" || email === "" || phone === "" || message === "") {
-        window.alert("One or more fields of the form are empty. Please complete all of the fields.");
+    if (name === "" || email === "" || message === "") {
+        window.alert("One or more fields of the form are empty. Please complete all of the required fields (marked by an *).");
     } else if (emailTest == null && phoneTest == null) {
         window.alert("Email address and phone number inputted incorrectly. Please enter your email in the format of johndoe@email.com, and enter your phone number in the format of ### ### ####, ###-###-####, or ##########.");
     } else if (emailTest == null) {
