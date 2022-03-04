@@ -223,9 +223,10 @@ h2 {
   font-weight: bold;
 }
 
-/* Customizations for TEDx Image */
-.tedx-image {
+/* Customizations for About Me Profile Image */
+.about-me-image {
   width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   margin-left: 20px;
