@@ -7,7 +7,7 @@ Welcome to the GitHub repository for my personal portfolio, curated for you usin
 I'm a student majoring in Computer Science at Georgia Tech. As an Indian-American who has lived outside the U.S. for over a decade and traveled across the world, I have been fortunate to interact with individuals from various countries, communities, and cultures. My hobbies include cuddling with my cat and exploring the depths of the ocean!
 
 <div align="center">
-    <img src="graphic/linkedInProfile.svg" width="400" height="400" alt="css-in-readme">
+    <img src="graphics/linkedInProfile.svg" width="400" height="400" alt="css-in-readme">
 </div>
 ---
 ## **My Commitment towards Protecting YOUR Data**
