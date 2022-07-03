@@ -4,7 +4,9 @@ Welcome to the GitHub repository for my personal portfolio, curated for you usin
 
 ---
 ## **A Little Bit About Me**
-I'm a student majoring in Computer Science at Georgia Tech. As an Indian-American who has lived outside the U.S. for over a decade and traveled across the world, I have been fortunate to interact with individuals from various countries, communities, and cultures. My hobbies include cuddling with my cat and exploring the depths of the ocean!
+Greetings! I am Nirjhar, a second-year Computer Science undergrad at Georgia Tech. This summer, I am interning as a software engineer at AT&T's Chief Security Office in Dallas, Texas!
+
+Outside of school, you can see me tinkering with various projects, such as websites, chatbots, and VR games. I also spend a lot of time scuba diving, experimenting with new foods, and playing catch-the-laser with my cat, Miu!
 
 ---
 ## **My Commitment towards Protecting YOUR Data**
