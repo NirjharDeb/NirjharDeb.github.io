@@ -585,6 +585,13 @@ h2 {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  .about-me-description {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: medium;
+  }
 }
 
 /* Customizations for when viewing in mobile */
