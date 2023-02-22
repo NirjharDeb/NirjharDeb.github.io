@@ -215,7 +215,7 @@ h2 {
 /* Small customizations for the about me text */
 .about-me-description {
   text-align: left;
-  font-size: large;
+  font-size: medium;
   margin-right: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
