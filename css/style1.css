@@ -233,8 +233,9 @@ h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   border-left: 5px;
-  border-color: #cccccc;
-  border-style: inset;
+  border-right: 5px;
+  border-color: #1c2841;
+  border-style: solid;
 }
 
 /* Customizes "What is Nirjhar doing now?" header */
@@ -277,14 +278,13 @@ h2 {
 /* Customizes the description below missions header */
 .goals-statement {
   text-align: left;
-  font-size: medium;
+  font-size: x-large;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Roboto, sans-serif;
   color: black;
-  font-weight: bold;
   overflow-y: auto;
 }
 
@@ -313,7 +313,7 @@ h2 {
   font-size: 20px;
   line-height: 1.55;
   justify-self: left;
-  font-weight: bold;
+  font-family: Roboto, sans-serif;
 }
 
 /* Customizes the bullet point of each list item in the goals section */
