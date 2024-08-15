@@ -29,23 +29,23 @@
     <!-- Top navigation bar -->
     <ul class="navbar">
         <div class="navPages">
-            <li>
+            <!--<li>
                 <a class="homePage active navPage" href="index.html" id="home">Home</a>
-            </li>
-            <li>
+            </li>-->
+            <!--<li>
                 <a class="navPage projectsPage" href="index1.html">Experience</a>
-            </li>
-            <li>
+            </li>-->
+            <!--<li>
                 <input id="menu" type="checkbox" name="menu" class="menu" />
                 <label for="menu" class="menu-button active navPage">Menu</label>
                 <ul class="dropdown-content">
                     <li><a href="index.html" class="dropdown-item">Home</a></li>
                     <li><a href="index1.html" class="dropdown-item">Projects</a></li>
                 </ul>
-            </li>
+            </li>-->
         </div>
         <li>
-            <h1 class="introducing-name"><em id="hello">Hello!</em></h1>
+            <h1 class="introducing-name"><em id="hello">Hello!</em> I am Nirjhar Deb!</h1>
         </li>
     </ul>
 
@@ -71,7 +71,7 @@
             <p class="about-me-description">
                 👋 Welcome to my cozy corner of the Internet! You can find me on the far left.
                 <br><br>
-                My name is Nirjhar. I'm a BS/MS CS student at Georgia Tech with industry and research experience in 
+                My name is Nirjhar Deb. I'm a BS/MS CS student at Georgia Tech with industry and research experience in 
                 <b>distributed systems</b>, <b>machine learning infrastructure</b>, and <b>large language models</b>.
                 <br><br>
                 My industry experience includes building ML pipelines and LLM-powered code linters at <b>Uber</b> and developing low-latency streaming technology at <b>AT&T</b>.
@@ -79,7 +79,28 @@
                 <br><br>
                 With extensive experience in computing systems and architecture, I am eager to deepen my expertise in more <b>mathematically rigorous</b> areas, such as machine learning, quantitative modeling, and artificial intelligence. 
                 <br><br>
-                Please feel free to contact me if you have any relevant opportunities or would just like to connect!😉
+                Feel free to email me at <b>ndeb6@gatech.edu</b> if you have any opportunities or would just like to meet!😉
+                <br><br>
+
+                <!-- LinkedIn button -->
+                <a href="https://www.linkedin.com/in/nirjhar-deb/" target="_blank" rel="noopener noreferrer"
+                class="contact-boxes">
+                <img src="images/LinkedIn_logo.png" alt="LinkedIn" width="50" height="50">
+                </a>
+                <!-- Gmail button -->
+                <a href="mailto:nirjhardeb03@gmail.com" target="_blank" rel="noopener noreferrer"
+                    class="contact-boxes">
+                    <img src="images/Gmail_logo.png" alt="Gmail" width="50" height="50">
+                </a>
+                <!-- Outlook button -->
+                <a href="mailto:ndeb6@gatech.edu" target="_blank" rel="noopener noreferrer" class="contact-boxes">
+                    <img src="images/Outlook_logo.png" alt="Gmail" width="50" height="50">
+                </a>
+                <!-- Github button -->
+                <a href="https://github.com/NirjharDeb" target="_blank" rel="noopener noreferrer"
+                    class="contact-boxes">
+                    <img src="images/Github_logo.png" alt="Gmail" width="50" height="50">
+                </a>
             </p>
         </div>
     </div>
@@ -92,16 +113,16 @@
             <div>
                 <!--<h2 class="missions-header">Missions in Progress:</h2>-->
                 <p class="goals-statement">
-                    These are a some of the pursuits I'm currently engaged in, spanning both work and personal growth endeavors!!
+                    I would love to share some of the pursuits I'm currently engaged in, spanning both work and personal growth...
                 </p>
 
                 <!-- Goals and resume -->
                 <div class="goals-resume">
                     <!-- Goals list -->
                     <ul class="goals">
-                        <li data-icon="👨‍🔬">Researching distributed systems at Georgia Tech's Habanero Laboratory.</li>
-                        <li data-icon="🥦">Refining my cooking skills to create healthier, nourishing meals.</li>
-                        <li data-icon="📐">Diving deep into probability and statistics to prepare myself for ML coursework.</li>
+                        <li data-icon="👨‍🔬">Researching distributed systems at Georgia Tech's Habanero Laboratory</li>
+                        <li data-icon="📐">Diving deep into probability, statistics, and machine learning</li>
+                        <li data-icon="🥦">Refining my cooking skills to create healthier, nourishing meals</li>
                     </ul>
 
                     <!-- Resume button -->
@@ -112,96 +133,10 @@
         </div>
     </div>
 
-    <!-- Contact me section -->
-    <div class="contact-me">
-        <h2 class="contact-header">Contact Me!</h2>
-        <div class="contact-methods">
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <h2 class="contact-form-title">Send Me a Quick Message</h2>
-                <form id="contact_form">
-                    <div class="form-inputs">
-                        <div class="left-form">
-                            <!-- Text field for name -->
-                            <label for="name">Name*:</label><br>
-                            <input type="text" id="name" name="name" placeholder="John Doe"
-                                class="contact-input"><br><br>
-
-                            <!-- Email field for email address -->
-                            <label for="email">Email address*:</label><br>
-                            <input type="email" id="email" name="email" placeholder="johndoe@email.com"
-                                class="contact-input"><br><br>
-
-                            <!-- Text field for phone number -->
-                            <label for="phone">Phone number:</label><br>
-                            <input type="text" id="phone" name="phone" placeholder="### ### ####"
-                                class="contact-input"><br>
-                        </div>
-
-                        <div class="right-form">
-                            <!-- Text area for message -->
-                            <label for="message">Message*:</label><br>
-                            <textarea name="message" id="message" class="message" cols="20" rows="9"
-                                placeholder="Write your message here"></textarea>
-                        </div>
-                    </div>
-                    <div class="bottom-form">
-                        <!-- Submit button -->
-                        <button id="submitButton" class="submitButton" type="submit">Submit</button>
-
-                        <!--  Reset form button -->
-                        <button id="resetButton" class="resetButton" type="button">Reset</button>
-                    </div>
-                </form>
-            </div>
-
-            <img src="images/Opie_NirjharDeb.jpg" alt="Nirjhar Deb's Opie Portrait" class="opie">
-
-            <!-- Contact Links -->
-            <div class="contact-links-total">
-                <h2 class="contact-links-title">Connect with Me!</h2>
-                <p class="contact-description">
-                    Phone Number: +1 (470) 832 9200
-                    <br>
-                    Personal Gmail Address: <a href="mailto:nirjhardeb03@gmail.com" target="_blank"
-                        rel="noopener noreferrer">nirjhardeb03@gmail.com</a>
-                    <br>
-                    University Outlook Address: <a href="mailto:ndeb6@gatech.edu" target="_blank"
-                        rel="noopener noreferrer">ndeb6@gatech.edu</a>
-                </p>
-                <div class="contact-links">
-                    <!-- LinkedIn button -->
-                    <a href="https://www.linkedin.com/in/nirjhar-deb/" target="_blank" rel="noopener noreferrer"
-                        class="contact-boxes">
-                        <img src="images/LinkedIn_logo.png" alt="LinkedIn" width="50" height="50">
-                    </a>
-
-                    <!-- Gmail button -->
-                    <a href="mailto:nirjhardeb03@gmail.com" target="_blank" rel="noopener noreferrer"
-                        class="contact-boxes">
-                        <img src="images/Gmail_logo.png" alt="Gmail" width="50" height="50">
-                    </a>
-
-                    <!-- Outlook button -->
-                    <a href="mailto:ndeb6@gatech.edu" target="_blank" rel="noopener noreferrer" class="contact-boxes">
-                        <img src="images/Outlook_logo.png" alt="Gmail" width="50" height="50">
-                    </a>
-
-                    <!-- Github button -->
-                    <a href="https://github.com/NirjharDeb" target="_blank" rel="noopener noreferrer"
-                        class="contact-boxes">
-                        <img src="images/Github_logo.png" alt="Gmail" width="50" height="50">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 
     <!-- A Sweet Production Statement -->
     <p class="production-statement">
-        Designed with HTML, CSS, JavaScript, Firebase, ❤️, and gallons of ☕!
+        Designed with lots of ❤️ and gallons of ☕!
     </p>
 
     <!-- SMTP encryption -->
